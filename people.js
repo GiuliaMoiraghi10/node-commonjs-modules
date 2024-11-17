@@ -11,9 +11,21 @@ const hobbyObj = require('./hobbies')
 
 // console.log(namesObj, hobbyObj)
 
-const fullName = namesObj('Giulia', 'Moiraghi');
-console.log(fullName)
+// const fullName = namesObj('Giulia', 'Moiraghi');
+// console.log(fullName)
 
-const fullHobby = hobbyObj('Videogames', 'Sailor Moon', 'Sport');
-console.log(fullHobby)
+// const fullHobby = hobbyObj('Videogames', 'Sailor Moon', 'Sport');
+// console.log(fullHobby)
+
+function person() {
+    const fullName = namesObj('Giulia', 'Moiraghi');
+    const fullHobby = hobbyObj('Videogiochi', 'Sailor Moon', 'Sport');
+    return {
+        firstName: fullName.firstName,
+        lastName: fullName.lastName,
+        hobbies: fullHobby,
+    };
+}
+
+console.log(person());
 
